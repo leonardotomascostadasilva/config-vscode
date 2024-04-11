@@ -37,5 +37,10 @@
     "command": "deleteFile",
     "key": "d",
     "when": "filesExplorerFocus && !inputFocus"
-  } // Atalho para excluir um arquivo quando pressionado 'd', com o foco no Explorer de Arquivos e sem foco em um campo de entrada.
+  }, // Atalho para excluir um arquivo quando pressionado 'd', com o foco no Explorer de Arquivos e sem foco em um campo de entrada.
+  {
+    "key": "tab",
+    "command": "selectNextSuggestion",
+    "when": "editorTextFocus && suggestWidgetVisible"
+  }
 ]
