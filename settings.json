@@ -32,10 +32,6 @@
       "commands": ["workbench.action.focusBelowGroup"]
     },
     {
-      "before": ["leader", "k"],
-      "commands": ["workbench.action.focusAboveGroup"]
-    },
-    {
       "before": ["leader", "l"],
       "commands": ["workbench.action.focusRightGroup"]
     },
