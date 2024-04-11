@@ -1,49 +1,41 @@
 [
   {
-    "key": "ctrl+shift+a",
-    "command": "workbench.action.terminal.focusNext",
-    "when": "terminalFocus"
-  }, // Mapeamento de teclas para focar no próximo terminal quando pressionado Ctrl+Shift+A.
+    "key": "alt+t",
+    "command": "workbench.action.togglePanel",
+    "when": "!terminalFocus"
+  }, // Atalho para alternar a visibilidade do painel quando pressionado Alt + T, quando o foco não está no terminal.
   {
-    "key": "ctrl+shift+b",
-    "command": "workbench.action.terminal.focusPrevious",
-    "when": "terminalFocus"
-  }, // Mapeamento de teclas para focar no terminal anterior quando pressionado Ctrl+Shift+B.
-  {
-    "key": "ctrl+shift+t",
-    "command": "workbench.action.togglePanel"
-  }, // Mapeamento de teclas para alternar a visibilidade do painel quando pressionado Ctrl+Shift+T.
-  {
-    "key": "ctrl+shift+n",
-    "command": "workbench.action.terminal.new",
-    "when": "terminalFocus"
-  }, // Mapeamento de teclas para abrir um novo terminal quando pressionado Ctrl+Shift+N com o foco no terminal.
-  {
-    "key": "ctrl+shift+w",
+    "key": "alt+t",
     "command": "workbench.action.terminal.kill",
     "when": "terminalFocus"
-  }, // Mapeamento de teclas para fechar o terminal atual quando pressionado Ctrl+Shift+W com o foco no terminal.
+  }, // Atalho para fechar o terminal atual quando pressionado Alt + T, quando o foco está no terminal.
   {
-    "command": "workbench.action.toggleSidebarVisibility",
-    "key": "ctrl+e"
-  }, // Mapeamento de teclas para alternar a visibilidade da barra lateral quando pressionado Ctrl+E.
-  {
-    "command": "workbench.files.action.focusFilesExplorer",
-    "key": "ctrl+e",
-    "when": "editorTextFocus"
-  }, // Mapeamento de teclas para focar no explorador de arquivos quando pressionado Ctrl+E com o foco no editor de texto.
+    "key": "alt+e",
+    "command": "workbench.view.explorer"
+  }, // Atalho para abrir o Explorer de Projeto quando pressionado Alt + E.
   {
     "key": "n",
     "command": "explorer.newFile",
     "when": "filesExplorerFocus && !inputFocus"
-  }, // Mapeamento de teclas para criar um novo arquivo no explorador de arquivos quando pressionado 'n' com o foco no explorador de arquivos e não em um campo de entrada.
-  // Outros mapeamentos para ações no explorador de arquivos e na barra lateral.
+  }, // Atalho para criar um novo arquivo no Explorer de Arquivos quando pressionado 'n', com o foco no Explorer de Arquivos e sem foco em um campo de entrada.
   {
-    "key": "ctrl+shift+5",
-    "command": "editor.emmet.action.matchTag"
-  }, // Mapeamento de teclas para emparelhar as tags HTML quando pressionado Ctrl+Shift+5 no editor.
+    "command": "renameFile",
+    "key": "r",
+    "when": "filesExplorerFocus && !inputFocus"
+  }, // Atalho para renomear um arquivo quando pressionado 'r', com o foco no Explorer de Arquivos e sem foco em um campo de entrada.
   {
-    "key": "ctrl+z",
-    "command": "workbench.action.toggleZenMode"
-  } // Mapeamento de teclas para alternar o modo zen quando pressionado Ctrl+Z.
+    "key": "shift+n",
+    "command": "explorer.newFolder",
+    "when": "explorerViewletFocus"
+  }, // Atalho para criar uma nova pasta quando pressionado Shift + 'n', com o foco na visualização do Explorer de Arquivos.
+  {
+    "key": "shift+n",
+    "command": "workbench.action.newWindow",
+    "when": "!explorerViewletFocus"
+  }, // Atalho para abrir uma nova janela quando pressionado Shift + 'n', sem o foco na visualização do Explorer de Arquivos.
+  {
+    "command": "deleteFile",
+    "key": "d",
+    "when": "filesExplorerFocus && !inputFocus"
+  } // Atalho para excluir um arquivo quando pressionado 'd', com o foco no Explorer de Arquivos e sem foco em um campo de entrada.
 ]
