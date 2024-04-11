@@ -1,0 +1,39 @@
+{
+  "editor.formatOnSave": true, // Formatar o código automaticamente ao salvar o arquivo.
+  "editor.suggest.insertMode": "replace", // Substituir o texto existente ao aceitar uma sugestão do editor.
+  "terminal.integrated.fontFamily": "monospace", // Definir a fonte do terminal integrado como monoespaçada.
+  "editor.linkedEditing": true, // Ativar a edição vinculada para editar símbolos simultaneamente.
+  "javascript.updateImportsOnFileMove.enabled": "always", // Atualizar automaticamente os imports de JavaScript ao mover arquivos.
+  "launch": {}, // Configurações de lançamento para depuração que podem ser definidas aqui.
+  "[json]": {}, // Configurações específicas para arquivos JSON.
+  "workbench.statusBar.visible": true, // Exibir a barra de status na área de trabalho.
+  "editor.minimap.enabled": false, // Desativar a exibição do minimapa no editor.
+  "breadcrumbs.enabled": false, // Desativar a exibição de migalhas de pão no editor.
+  "workbench.iconTheme": "material-icon-theme", // Definir o tema de ícones da área de trabalho.
+  "update.showReleaseNotes": false, // Não exibir as notas de lançamento ao atualizar.
+  "zenMode.hideLineNumbers": false, // Não ocultar os números de linha no modo zen.
+  "editor.lineNumbers": "relative", // Exibir números de linha relativos ao invés de absolutos.
+
+  "vim.leader": "<Space>", // Definir o caractere de liderança para comandos do Vim.
+  "vim.hlsearch": true, // Realçar todas as instâncias correspondentes ao pesquisar.
+  "vim.normalModeKeyBindingsNonRecursive": [ // Mapeamentos de teclas para comandos no modo normal do Vim.
+    { "before": ["<S-h>"], "commands": [":bprevious"] }, // Navegar para a aba anterior com Shift + h.
+    { "before": ["<S-l>"], "commands": [":bnext"] }, // Navegar para a próxima aba com Shift + l.
+    // Mapeamentos para divisão de tela e foco em grupos.
+    // Outros mapeamentos para comandos do Vim.
+  ],
+  "vim.visualModeKeyBindings": [ // Mapeamentos de teclas para comandos no modo visual do Vim.
+    // Mapeamentos para operações de indentação e desindentação.
+    { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] } // Comando para comentar a linha no modo visual com o líder seguido de c.
+  ],
+  "[typescriptreact]": { // Configurações específicas para arquivos TypeScript React.
+    "editor.defaultFormatter": "esbenp.prettier-vscode" // Usar o Prettier como o formatador padrão.
+  },
+  "go.toolsManagement.autoUpdate": true, // Atualizar automaticamente as ferramentas do Go.
+  "[typescript]": { // Configurações específicas para arquivos TypeScript.
+    "editor.defaultFormatter": "esbenp.prettier-vscode" // Usar o Prettier como o formatador padrão.
+  },
+  "[jsonc]": { // Configurações específicas para arquivos JSON com comentários.
+    "editor.defaultFormatter": "esbenp.prettier-vscode" // Usar o Prettier como o formatador padrão.
+  }
+}
