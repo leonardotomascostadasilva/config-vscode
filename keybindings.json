@@ -24,15 +24,10 @@
     "when": "filesExplorerFocus && !inputFocus"
   }, // Atalho para renomear um arquivo quando pressionado 'r', com o foco no Explorer de Arquivos e sem foco em um campo de entrada.
   {
-    "key": "shift+n",
+    "key": "N",
     "command": "explorer.newFolder",
     "when": "explorerViewletFocus"
   }, // Atalho para criar uma nova pasta quando pressionado Shift + 'n', com o foco na visualização do Explorer de Arquivos.
-  {
-    "key": "shift+n",
-    "command": "workbench.action.newWindow",
-    "when": "!explorerViewletFocus"
-  }, // Atalho para abrir uma nova janela quando pressionado Shift + 'n', sem o foco na visualização do Explorer de Arquivos.
   {
     "command": "deleteFile",
     "key": "d",
